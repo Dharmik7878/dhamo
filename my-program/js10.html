@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [1,2,3,4,5,6,7,8,9]
+        let num_m = [11,12,13,14,15,16,17,18,19]
+        let num_e_m = [211,212,213,414,415,416,417,818,819]
+        console.log(num.length)
+        // delete num[0]
+        console.log(num.length)
+        
+        let newary = num.concat(num_m,num_e_m)
+        console.log(newary)
+        console.log(num, num_m)
+        
+        let compare = (a,b)=>{
+            return b-a
+        }
+        let numm = [221,52,36,4,5,96,7,118,899]
+        // num.sort(compare)
+        console.log(numm.sort(compare))
+        
+        let num_spl = [221,52,36,4,5,96,7,118,899]
+        num_spl.splice(2,4,12,23,34,45)
+        console.log(num_spl.splice(2,4,12,23,34,45))
+        </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = prompt("Enetr s, w or g")
+        let cpuI = Math.floor(Math.random()*3)
+        let cpu = ["s","w","g"][cpuI]
+        
+        const match = (cpu,user)=>{
+            if(cpu === user){
+                return "nobuddy Match";
+            }
+            else if(cpu === "s" && user === "w"){
+                return cpu;
+            }
+            else if(cpu === "s" && user === "g"){
+                return user;
+            } 
+            else if(cpu === "g" && user === "w"){
+                return user;
+            }
+            else if(cpu === "g" && user === "s"){
+                return cpu;
+            }
+            else if(cpu === "w" && user === "s"){
+                return user; 
+            }
+            else if(cpu === "w" && user === "g"){
+                return cpu;
+            }
+
+        }
+        let result = match(cpu, user)
+        document.write(`CPU:${cpu} And RESULT:${result} \nThe Winner IS: ${result}`) 
+    </script>
+</body>
+</html>

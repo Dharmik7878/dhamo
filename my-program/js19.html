@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: rgb(239, 155, 239);
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav li {
+            padding: 12px;
+            list-style: none;
+            background-color: rgb(143, 65, 131);
+            margin: 4px 12px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementsByTagName("ul")[0].firstElementChild.style.color = "rgb(71, 79, 23)";
+        Array.from(document.getElementsByTagName("li")).forEach((element) => {
+            element.style.background = "cyan";
+        })
+        alert("Bharat is a Hindu Rashatra")
+    </script>
+
+</body>
+
+</html>

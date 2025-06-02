@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sentence = 'the quick brown fox jump overthe lazy dog.'
+        const word = 'fox'
+        console.log(sentence.includes(word))
+        console.log(`the word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`)
+
+        let str  = "please give rs 1000"
+        let amount = Number.parseInt(str.slice(15))
+        console.log(amount)
+        console.log(typeof amount)
+
+        let friend = "deepika"
+        friend[3] = "r"
+        console.log(friend)
+    </script>
+</body>
+</html>

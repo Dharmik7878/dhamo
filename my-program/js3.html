@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const hello = () => {
+            console.log("hey i am a fine yaar");
+            return "hii";
+        };
+        function onePlusAvg(x, y) {
+            return 1 + (x + y) / 2;
+        }
+        const sum = (p, q) => {
+            return p + q;
+        };
+        let a = 1;
+        let b = 2;
+        let c = 3;
+        let v = hello();
+
+        console.log(v);
+        console.log("one plus average of a and b is", onePlusAvg(a, b));
+        console.log("one plus average of b and c is", onePlusAvg(b, c));
+        console.log("one plus average of c and a is", onePlusAvg(c, a));
+        console.log(sum(9, 7));
+    </script>
+</body>
+</html>

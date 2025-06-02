@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [45,23,21]
+        
+        let a = arr.map((value,index,array)=>{
+            console.log(value,index,array)
+            return value + index
+        })
+        console.log(a)
+
+        let arr2 = [23,34,43,0,2,4]
+
+        let a2 = arr2.filter((a)=>{
+            return a<10
+        })
+        console.log(a2)
+
+        let arr3 = [1,2,3,4,5,6]
+        let narr3 = arr3.reduce((h1,h2)=>{
+            return h1 + h2
+        })
+        console.log(narr3)
+
+        let nar = [1,2,3,4,5,6]
+
+        const reduse_func = (f1,f2)=>{
+            return f1 + f2
+        }
+        let narr = nar.reduce(reduse_func)
+        console.log(narr)
+    </script>
+</body>
+</html>
